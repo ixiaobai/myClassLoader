@@ -20,8 +20,6 @@ public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         byte[] data = this.loadClassData(name);
-        
-
         return this.defineClass(name,data,0,data.length);
     }
 
@@ -44,5 +42,6 @@ public class MyClassLoader extends ClassLoader {
         } catch(Exception e) {
             e.printStackTrace();
         }
+        return null;
     }
 }

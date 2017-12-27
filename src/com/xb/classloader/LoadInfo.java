@@ -16,4 +16,28 @@ public class LoadInfo {
         this.myClassLoader = myClassLoader;
         this.loadTime = loadTime;
     }
+
+    public MyClassLoader getMyClassLoader() {
+        return myClassLoader;
+    }
+
+    public void setMyClassLoader(MyClassLoader myClassLoader) {
+        this.myClassLoader = myClassLoader;
+    }
+
+    public Long getLoadTime() {
+        return loadTime;
+    }
+
+    public void setLoadTime(Long loadTime) {
+        this.loadTime = loadTime;
+    }
+
+    public BasesManager getBasesManager() {
+        return basesManager;
+    }
+
+    public void setBasesManager(BasesManager basesManager) {
+        this.basesManager = basesManager;
+    }
 }
